@@ -1,4 +1,18 @@
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -25168,7 +25182,7 @@ figure {
 
   .gallery-mask {
     width: 92%;
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   .team-grid-wrapper-2 {
@@ -28253,7 +28267,7 @@ section, header {
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    width: 100vw !important;
+    width: 100% !important;
     height: 100vh !important;
     background: rgba(0, 0, 0, 0.72) !important;
     backdrop-filter: none !important;
@@ -28638,5 +28652,323 @@ section, header {
   .footer-logo-img {
     height: 38px;
     max-width: 155px;
+  }
+}
+
+
+/* ========================================================
+   COMPREHENSIVE MOBILE VIEW RESPONSIVENESS & OVERFLOW FIX
+   Eliminates all horizontal shifting/scrolling on mobile devices
+   ======================================================== */
+
+/* Root Level Containment */
+html,
+body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  overflow-x: clip !important;
+  position: relative !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Multimedia & Embeds Protection */
+img,
+video,
+iframe,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Word Wrapping Safety */
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Sections and Containers 100% Viewport Fit */
+.base-container,
+.full-nav-hero-container,
+.w-container,
+.section,
+.section-services,
+.section-team,
+.section-footer,
+.action-section,
+.clip-print-content,
+.best-tours,
+.grid-wrapper,
+.product-wrapper,
+.our-news-slider,
+.cards-slider,
+.gallery-slider,
+.testimonial-small-slider,
+.testimonials-block,
+.footer-bg,
+.footer-center,
+.footer-grid,
+.page-banner,
+.main-container,
+.instagram-main-container,
+.flyout-overlay {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.flyout-overlay {
+  width: 100% !important;
+}
+
+/* Prevent Sliders from expanding document on tablet & mobile */
+@media screen and (max-width: 991px) {
+  .best-tours {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .grid-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .product-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .our-news-slider,
+  .cards-slider,
+  .gallery-slider,
+  .testimonial-small-slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .cards-mask,
+  .gallery-mask,
+  .testimonial-mask,
+  .w-slider-mask {
+    overflow: hidden !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .card-slide,
+  .gallery-slide,
+  .testimonial-small-slide,
+  .w-slide {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .section-services {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .team-grid-wrapper-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .instagram-main-container {
+    overflow: hidden !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Mobile Devices (<= 767px): Convert grid layouts to responsive flex column */
+@media screen and (max-width: 767px) {
+  .grid-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .product-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-area: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .cards-slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .cards-mask {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .card-slide {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .product-main-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .team-grid-wrapper-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .four-column,
+  .stacked-grid-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-area: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-mask {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-slide {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Hide decorative prints/textures that protrude off-screen */
+  .print-wrapper,
+  .print-wrapper-clip {
+    display: none !important;
+  }
+
+  .section-bg-layer img {
+    display: none !important;
+  }
+
+  /* Safe padding on sections */
+  .section,
+  .section-services,
+  .section-team,
+  .action-section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .base-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-bg {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .section-footer {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-video-wrapper {
+    width: 92% !important;
+    max-width: 92% !important;
+  }
+}
+
+/* Small mobile devices (<= 479px) */
+@media screen and (max-width: 479px) {
+  .grid-wrapper {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .team-grid-wrapper-2 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .base-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .section,
+  .section-services,
+  .section-team,
+  .action-section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .footer-bg {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border-radius: 16px !important;
+  }
+
+  .section-footer {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
 }
