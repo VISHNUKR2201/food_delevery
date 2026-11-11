@@ -1,0 +1,3016 @@
+<!DOCTYPE html>
+<html data-wf-page="67235b344c96c8cf5edb4ff6" data-wf-site="67235b344c96c8cf5edb4ff2" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Us - Stackly Food Delivery | Fast, Fresh, Hot Food Delivered 24/7</title>
+    <meta name="description"
+        content="Discover Stackly Food Delivery - our culinary journey, express delivery fleet, chef partnerships, and promise to bring restaurant-quality dishes piping hot to your doorstep in 24 minutes." />
+    <meta property="og:title" content="About Us - Stackly Food Delivery" />
+    <meta property="og:description"
+        content="Discover Stackly Food Delivery - our culinary journey, express delivery fleet, chef partnerships, and promise to bring restaurant-quality dishes piping hot to your doorstep in 24 minutes." />
+    <meta property="twitter:title" content="About Us - Stackly Food Delivery" />
+    <meta property="twitter:description"
+        content="Discover Stackly Food Delivery - our culinary journey, express delivery fleet, chef partnerships, and promise to bring restaurant-quality dishes piping hot to your doorstep in 24 minutes." />
+    <meta property="og:type" content="website" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Favicon & Touch Icons -->
+    <link href="./image/6704df7c0db5f1ef46078225_Favicon.webp" rel="shortcut icon" type="image/x-icon" />
+    <link href="./image/6704df858576da228d02e0d8_Webclip.webp" rel="apple-touch-icon" />
+
+    <!-- Fonts & Core Stylesheets -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Plus Jakarta Sans:regular,500,600,700,800", "Libre Baskerville:regular,italic,700", "Inter:300,400,500,600,700"]
+            }
+        });
+    </script>
+    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome 6 Icons (No keyboard icons or emojis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Anti-Flash Instant Position Restorer -->
+    <script>
+        (function () {
+            try {
+                if ('scrollRestoration' in history) {
+                    history.scrollRestoration = 'manual';
+                }
+                var p = new URLSearchParams(window.location.search);
+                var isRestoring = p.has('restore_pos') ||
+                                 sessionStorage.getItem('stackly_restore_active') === '1' ||
+                                 sessionStorage.getItem('stackly_restore_scroll') !== null;
+                if (isRestoring) {
+                    document.documentElement.classList.add('stackly-restoring-pos');
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.stackly-restoring-pos {
+            scroll-behavior: auto !important;
+        }
+        html.stackly-restoring-pos body {
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+    </style>
+
+    <style>
+        :root {
+            --primary: #f9a80b;
+            --primary-dark: #10423a;
+            --primary-green: #11241c;
+            --light-green: #bac7a7;
+            --light-yellow: #f8cf40;
+            --pink: #f3403a;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-border: rgba(255, 255, 255, 0.12);
+        }
+
+        body {
+            background-color: var(--primary-green);
+            color: var(--white);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* --- SECTION COMMON --- */
+        .about-section {
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(249, 168, 11, 0.14);
+            border: 1px solid rgba(249, 168, 11, 0.4);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 7px 18px;
+            border-radius: 50px;
+            margin-bottom: 18px;
+            backdrop-filter: blur(8px);
+        }
+
+        .section-heading-white {
+            font-family: 'Libre Baskerville', serif;
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--white);
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .section-desc-light {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #d1d9d4;
+            max-width: 680px;
+            margin: 0 auto 50px auto;
+        }
+
+        /* --- REUSABLE BACKGROUND IMAGE LAYERS (REFERENCING INDEX.HTML) --- */
+        .section-bg-layer {
+            position: absolute;
+            inset: 0%;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: 1;
+        }
+
+        .section-pattern-bg {
+            position: absolute;
+            inset: 0%;
+            width: 100%;
+            height: 100%;
+            background-repeat: repeat;
+            background-position: 50% 0;
+            z-index: 1;
+        }
+
+        /* --- 1. HERO SECTION WITH IMAGE BANNER & OVERLAYS --- */
+        .about-hero {
+            position: relative;
+            min-height: 88vh;
+            padding: 160px 20px 100px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: var(--primary-dark);
+        }
+
+        .about-hero-bg-wrapper {
+            position: absolute;
+            inset: 0%;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .about-hero-bg-image {
+            position: absolute;
+            inset: 0%;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center 35%;
+            filter: brightness(0.65) saturate(1.15);
+        }
+
+        .about-hero-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(135deg, rgba(11, 46, 40, 0.93) 0%, rgba(16, 66, 58, 0.82) 48%, rgba(8, 32, 27, 0.95) 100%),
+                        radial-gradient(circle at 75% 25%, rgba(249, 168, 11, 0.22) 0%, transparent 55%),
+                        linear-gradient(180deg, rgba(8, 32, 27, 0.55) 0%, rgba(11, 46, 40, 0.92) 100%);
+            z-index: 2;
+        }
+
+        .about-hero-world-print {
+            position: absolute;
+            right: -8%;
+            top: 5%;
+            width: 820px;
+            height: auto;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .about-hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--light-green);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hero-breadcrumb a {
+            color: var(--light-yellow);
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .hero-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+            line-height: 1.15;
+            color: var(--white);
+            margin-bottom: 24px;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--light-yellow) 60%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 17px;
+            line-height: 1.75;
+            color: #dbe5df;
+            margin-bottom: 36px;
+            max-width: 560px;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .btn-primary-about {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, var(--pink), var(--primary) 92%);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(243, 64, 58, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-about:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(249, 168, 11, 0.45);
+            color: #ffffff;
+        }
+
+        .btn-secondary-about {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 15px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-about:hover {
+            background: rgba(255, 255, 255, 0.18);
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* --- HERO VISUAL & FLOATING CARDS --- */
+        .hero-visual-wrap {
+            position: relative;
+            width: 100%;
+            height: 480px;
+        }
+
+        .hero-main-photo {
+            width: 85%;
+            height: 90%;
+            border-radius: 28px;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+        }
+
+        .floating-stat-card {
+            position: absolute;
+            background: rgba(16, 66, 58, 0.88);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 20px;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+            z-index: 4;
+        }
+
+        .floating-stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .floating-stat-card.card-top {
+            top: 20px;
+            right: 0;
+            animation: floatSlow 5s ease-in-out infinite alternate;
+        }
+
+        .floating-stat-card.card-bottom {
+            bottom: 10px;
+            left: -20px;
+            animation: floatSlow 6s ease-in-out 1s infinite alternate;
+        }
+
+        .floating-icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .floating-icon-wrap.gold {
+            background: rgba(249, 168, 11, 0.25);
+            color: var(--primary);
+        }
+
+        .floating-icon-wrap.pink {
+            background: rgba(243, 64, 58, 0.25);
+            color: var(--pink);
+        }
+
+        .floating-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .floating-sub {
+            font-size: 12px;
+            color: var(--light-green);
+            margin: 0;
+        }
+
+        @keyframes floatSlow {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-12px); }
+        }
+
+        /* --- 2. OUR STORY SECTION --- */
+        .story-section {
+            position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .story-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(135deg, rgba(11, 46, 40, 0.94) 0%, rgba(16, 66, 58, 0.95) 100%),
+                        radial-gradient(circle at 10% 80%, rgba(249, 168, 11, 0.1) 0%, transparent 50%);
+            z-index: 2;
+        }
+
+        .story-world-watermark {
+            position: absolute;
+            left: -150px;
+            bottom: -100px;
+            width: 700px;
+            height: auto;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .story-images {
+            position: relative;
+        }
+
+        .story-main-img {
+            width: 100%;
+            height: 440px;
+            border-radius: 24px;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .story-badge-stamp {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: linear-gradient(135deg, var(--primary), var(--light-yellow));
+            color: var(--primary-dark);
+            padding: 18px 24px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(249, 168, 11, 0.4);
+        }
+
+        .story-badge-stamp span {
+            display: block;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .story-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #d6e0db;
+            margin-bottom: 20px;
+        }
+
+        .timeline-strip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item h5 {
+            font-size: 18px;
+            color: var(--primary);
+            margin: 0 0 6px 0;
+            font-weight: 800;
+        }
+
+        .timeline-item p {
+            font-size: 13px;
+            color: #a4b5ad;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* --- 3. FOUR PILLARS SECTION --- */
+        .pillars-section {
+            position: relative;
+        }
+
+        .pillars-overlay {
+            position: absolute;
+            inset: 0%;
+            background: radial-gradient(circle at 10% 20%, rgba(249, 168, 11, 0.1) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(46, 204, 113, 0.08) 0%, transparent 40%),
+                        linear-gradient(180deg, rgba(16, 66, 58, 0.95) 0%, rgba(11, 46, 40, 0.98) 100%);
+            z-index: 2;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 36px 26px;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--pink));
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(249, 168, 11, 0.45);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .pillar-card:hover::before {
+            opacity: 1;
+        }
+
+        .pillar-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            background: rgba(249, 168, 11, 0.14);
+            border: 1px solid rgba(249, 168, 11, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 22px;
+            transition: all 0.35s ease;
+        }
+
+        .pillar-card:hover .pillar-icon {
+            background: var(--primary);
+            color: var(--primary-dark);
+            transform: scale(1.08) rotate(5deg);
+        }
+
+        .pillar-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #ffffff;
+        }
+
+        .pillar-card p {
+            font-size: 14px;
+            line-height: 1.65;
+            color: #b5c4bc;
+            margin: 0;
+        }
+
+        /* --- 4. LIVE IMPACT COUNTER WITH BANNER PHOTO BACKGROUND --- */
+        .stats-section {
+            position: relative;
+            padding: 90px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stats-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(180deg, rgba(8, 32, 27, 0.9) 0%, rgba(11, 46, 40, 0.86) 50%, rgba(8, 32, 27, 0.93) 100%),
+                        radial-gradient(circle at 50% 50%, rgba(249, 168, 11, 0.15) 0%, transparent 70%);
+            z-index: 2;
+        }
+
+        .stats-world-watermark {
+            position: absolute;
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 780px;
+            height: auto;
+            opacity: 0.07;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-box {
+            padding: 34px 20px;
+            border-radius: 22px;
+            background: rgba(16, 66, 58, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-6px);
+            border-color: rgba(249, 168, 11, 0.5);
+            background: rgba(16, 66, 58, 0.85);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .stat-number {
+            font-family: 'Libre Baskerville', serif;
+            font-size: clamp(2.4rem, 4vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--light-yellow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #bac7a7;
+            margin: 0;
+        }
+
+        /* --- 5. HOW IT WORKS TIMELINE --- */
+        .process-section {
+            position: relative;
+        }
+
+        .process-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(180deg, rgba(11, 46, 40, 0.96) 0%, rgba(16, 66, 58, 0.96) 100%);
+            z-index: 2;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .process-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 22px;
+            padding: 32px 24px;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .process-card:hover {
+            border-color: rgba(249, 168, 11, 0.45);
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.09);
+        }
+
+        .step-num {
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: rgba(249, 168, 11, 0.7);
+            border: 1px solid rgba(249, 168, 11, 0.3);
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .process-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(243, 64, 58, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--pink);
+            margin-bottom: 20px;
+        }
+
+        .process-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+
+        .process-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #b0c2b8;
+            margin: 0;
+        }
+
+        /* --- 6. FLEET & TEAM SECTION --- */
+        .fleet-section {
+            position: relative;
+        }
+
+        .fleet-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(135deg, rgba(11, 46, 40, 0.95) 0%, rgba(8, 32, 27, 0.96) 100%),
+                        radial-gradient(circle at 80% 20%, rgba(249, 168, 11, 0.08) 0%, transparent 50%);
+            z-index: 2;
+        }
+
+        .fleet-world-watermark {
+            position: absolute;
+            left: -120px;
+            top: 20%;
+            width: 720px;
+            height: auto;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .courier-card {
+            background: rgba(16, 66, 58, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.35s ease;
+        }
+
+        .courier-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(249, 168, 11, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+        }
+
+        .courier-img-wrap {
+            position: relative;
+            width: 100%;
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .courier-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .courier-card:hover .courier-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .courier-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(16, 66, 58, 0.88);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--light-yellow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .courier-info {
+            padding: 22px;
+            text-align: left;
+        }
+
+        .courier-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 4px 0;
+        }
+
+        .courier-role {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 0 0 12px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .courier-stat-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #bac7a7;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px 10px;
+            border-radius: 8px;
+        }
+
+        .courier-socials {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .courier-social-link {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .courier-social-link:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        a.pillar-card,
+        a.process-card,
+        a.stat-box,
+        a.safety-card,
+        a.review-card,
+        a.timeline-item {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
+        }
+
+        a.floating-stat-card {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        a.story-badge-stamp {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        a.hero-trust-badge {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            cursor: pointer;
+        }
+
+        a.hero-trust-badge:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .footer-socials i {
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        /* --- 7. SAFETY & SUSTAINABILITY GUARANTEE --- */
+        .safety-section {
+            position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .safety-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(135deg, rgba(11, 46, 40, 0.94) 0%, rgba(16, 66, 58, 0.95) 100%),
+                        radial-gradient(circle at 20% 80%, rgba(46, 204, 113, 0.12) 0%, transparent 50%);
+            z-index: 2;
+        }
+
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .safety-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 22px;
+            padding: 34px 28px;
+            text-align: left;
+            transition: all 0.3s;
+        }
+
+        .safety-card:hover {
+            border-color: rgba(249, 168, 11, 0.45);
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .safety-icon-header {
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            background: rgba(61, 81, 29, 0.6);
+            border: 1px solid var(--light-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .safety-card h4 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+
+        .safety-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #b5c7bd;
+            margin: 0;
+        }
+
+        /* --- 8. TESTIMONIALS --- */
+        .testimonials-section {
+            position: relative;
+        }
+
+        .testimonials-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(180deg, rgba(16, 66, 58, 0.97) 0%, rgba(11, 46, 40, 0.98) 100%),
+                        radial-gradient(circle at 50% 10%, rgba(249, 168, 11, 0.08) 0%, transparent 60%);
+            z-index: 2;
+        }
+
+        .testimonials-world-watermark {
+            position: absolute;
+            right: -150px;
+            bottom: -100px;
+            width: 750px;
+            height: auto;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .review-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 36px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.35s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(249, 168, 11, 0.45);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .review-stars {
+            color: var(--primary);
+            font-size: 15px;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 4px;
+        }
+
+        .review-text {
+            font-size: 15px;
+            line-height: 1.75;
+            color: #d1ddd6;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .review-author-wrap {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 18px;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        .author-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 2px 0;
+        }
+
+        .author-role {
+            font-size: 12px;
+            color: #8da498;
+            margin: 0;
+        }
+
+        /* --- 9. CTA BANNER WITH PHOTOGRAPHIC CARD BACKGROUND --- */
+        .cta-section {
+            position: relative;
+            padding: 110px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-overlay {
+            position: absolute;
+            inset: 0%;
+            background: linear-gradient(135deg, rgba(8, 32, 27, 0.93) 0%, rgba(11, 46, 40, 0.92) 100%),
+                        radial-gradient(circle at 50% 50%, rgba(249, 168, 11, 0.22) 0%, transparent 65%);
+            z-index: 2;
+        }
+
+        .cta-world-watermark {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 850px;
+            height: auto;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .cta-box {
+            max-width: 820px;
+            margin: 0 auto;
+            background: rgba(16, 66, 58, 0.88);
+            backdrop-filter: blur(16px);
+            border: 2px solid rgba(249, 168, 11, 0.45);
+            border-radius: 32px;
+            padding: 60px 40px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(249, 168, 11, 0.2);
+            position: relative;
+            z-index: 3;
+        }
+
+        .cta-btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 36px;
+        }
+
+        /* --- RESPONSIVE RULES --- */
+        @media (max-width: 1024px) {
+            .pillars-grid,
+            .fleet-grid,
+            .process-grid,
+            .safety-grid,
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* 1. Global Centering, Clean Spacing & Overflow Protection */
+            html, body {
+                overflow-x: hidden !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .about-section {
+                padding: 60px 16px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+                overflow: hidden !important;
+            }
+
+            .about-container {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .section-tag {
+                margin: 0 auto 16px auto !important;
+                justify-content: center !important;
+                font-size: 11px !important;
+                letter-spacing: 1.5px !important;
+                padding: 6px 16px !important;
+                display: inline-flex !important;
+                max-width: 92% !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .section-heading-white {
+                text-align: center !important;
+                font-size: clamp(1.65rem, 6vw, 2.25rem) !important;
+                line-height: 1.25 !important;
+                margin: 0 auto 14px auto !important;
+                max-width: 100% !important;
+                word-wrap: break-word !important;
+            }
+
+            .section-desc-light {
+                text-align: center !important;
+                font-size: 14.5px !important;
+                line-height: 1.65 !important;
+                margin: 0 auto 32px auto !important;
+                padding: 0 10px !important;
+                max-width: 520px !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Watermark background map control to prevent mobile horizontal scroll */
+            .story-world-watermark,
+            .stats-world-watermark,
+            .fleet-world-watermark,
+            .testimonials-world-watermark,
+            .cta-world-watermark,
+            .about-hero-world-print,
+            .footer-print {
+                display: none !important;
+            }
+
+            /* 2. Hero Section */
+            .about-hero {
+                padding: 120px 16px 60px !important;
+                min-height: auto !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                text-align: center !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                overflow: hidden !important;
+            }
+
+            .about-hero-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                width: 100% !important;
+                gap: 32px !important;
+            }
+
+            .hero-text-content {
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                width: 100% !important;
+                max-width: 540px !important;
+            }
+
+            .hero-breadcrumb {
+                justify-content: center !important;
+                font-size: 12px !important;
+                margin-bottom: 14px !important;
+                width: 100% !important;
+            }
+
+            .hero-title {
+                text-align: center !important;
+                font-size: clamp(1.9rem, 6.6vw, 2.6rem) !important;
+                line-height: 1.2 !important;
+                margin: 0 auto 16px auto !important;
+            }
+
+            .hero-subtitle {
+                text-align: center !important;
+                font-size: 15px !important;
+                line-height: 1.65 !important;
+                margin: 0 auto 26px auto !important;
+                max-width: 480px !important;
+            }
+
+            .hero-cta-group {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 100% !important;
+                gap: 12px !important;
+            }
+
+            .btn-primary-about,
+            .btn-secondary-about {
+                width: 100% !important;
+                max-width: 290px !important;
+                justify-content: center !important;
+                padding: 14px 22px !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .hero-trust-row {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 12px 18px !important;
+                width: 100% !important;
+                margin-top: 24px !important;
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
+
+            .hero-trust-badge {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .hero-visual-col {
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            .hero-visual-wrap {
+                height: auto !important;
+                width: 100% !important;
+                max-width: 380px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 12px !important;
+                margin: 8px auto 0 auto !important;
+                position: relative !important;
+            }
+
+            .hero-main-photo {
+                width: 100% !important;
+                height: 250px !important;
+                border-radius: 20px !important;
+                object-fit: cover !important;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+                display: block !important;
+            }
+
+            .floating-stat-card {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+                width: 100% !important;
+                max-width: 320px !important;
+                animation: none !important;
+                justify-content: center !important;
+                margin: 0 auto !important;
+                padding: 12px 18px !important;
+                box-sizing: border-box !important;
+                border-radius: 16px !important;
+            }
+
+            /* 3. Our Story Section (Image 2 & Image 3 Fix) */
+            .story-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                width: 100% !important;
+                gap: 32px !important;
+            }
+
+            .story-images {
+                width: 100% !important;
+                max-width: 440px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                position: relative !important;
+                margin: 0 auto 12px auto !important;
+            }
+
+            .story-main-img {
+                width: 100% !important;
+                height: 260px !important;
+                max-height: 280px !important;
+                border-radius: 20px !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+
+            /* Clean centered pill stamp that NEVER overlaps the text below */
+            .story-badge-stamp {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                left: auto !important;
+                top: auto !important;
+                transform: none !important;
+                margin-top: -24px !important;
+                z-index: 5 !important;
+                display: inline-flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 10px !important;
+                padding: 12px 22px !important;
+                border-radius: 50px !important;
+                width: auto !important;
+                max-width: 92% !important;
+                font-size: 13px !important;
+                font-weight: 800 !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.5px !important;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+                box-sizing: border-box !important;
+            }
+
+            .story-badge-stamp span {
+                font-size: 20px !important;
+                font-weight: 900 !important;
+                display: inline-block !important;
+                line-height: 1 !important;
+            }
+
+            .story-content {
+                width: 100% !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .story-content .section-tag {
+                margin: 16px auto 16px auto !important;
+            }
+
+            .story-content .section-heading-white {
+                text-align: center !important;
+                margin: 0 auto 16px auto !important;
+            }
+
+            .story-content p {
+                text-align: center !important;
+                font-size: 15px !important;
+                line-height: 1.7 !important;
+                color: #d6e0db !important;
+                margin: 0 auto 16px auto !important;
+                max-width: 540px !important;
+            }
+
+            /* Milestone Cards (Image 3 Fix) */
+            .timeline-strip {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 12px !important;
+                width: 100% !important;
+                max-width: 440px !important;
+                margin: 24px auto 0 auto !important;
+                padding-top: 20px !important;
+                border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+                box-sizing: border-box !important;
+            }
+
+            .timeline-item {
+                background: rgba(255, 255, 255, 0.05) !important;
+                border: 1px solid rgba(255, 255, 255, 0.12) !important;
+                border-radius: 16px !important;
+                padding: 14px 10px !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                box-sizing: border-box !important;
+                transition: all 0.25s ease !important;
+                text-decoration: none !important;
+            }
+
+            .timeline-item:hover,
+            .timeline-item:active {
+                background: rgba(249, 168, 11, 0.12) !important;
+                border-color: rgba(249, 168, 11, 0.4) !important;
+                transform: translateY(-2px) !important;
+            }
+
+            .timeline-item h5 {
+                font-size: 20px !important;
+                font-weight: 800 !important;
+                color: var(--primary) !important;
+                margin: 0 0 4px 0 !important;
+                font-family: 'Libre Baskerville', serif !important;
+            }
+
+            .timeline-item p {
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                color: #d6e0db !important;
+                margin: 0 !important;
+                line-height: 1.3 !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.5px !important;
+            }
+
+            /* 4. Live Impact Stats Counter (Image 1 Fix - Zero Overflow) */
+            .stats-section {
+                padding: 60px 16px !important;
+                overflow: hidden !important;
+            }
+
+            .stats-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+                width: 100% !important;
+                max-width: 360px !important;
+                margin: 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .stat-box {
+                width: 100% !important;
+                padding: 26px 18px !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border-radius: 20px !important;
+                background: rgba(16, 66, 58, 0.85) !important;
+                border: 1px solid rgba(255, 255, 255, 0.16) !important;
+            }
+
+            .stat-number {
+                font-size: clamp(2.2rem, 7.5vw, 2.8rem) !important;
+                line-height: 1.1 !important;
+                margin-bottom: 8px !important;
+                word-break: normal !important;
+                text-align: center !important;
+                width: 100% !important;
+            }
+
+            .stat-label {
+                font-size: 13px !important;
+                font-weight: 700 !important;
+                text-align: center !important;
+                letter-spacing: 1.2px !important;
+                line-height: 1.4 !important;
+                width: 100% !important;
+            }
+
+            /* 5. Four Core Pillars */
+            .pillars-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                margin: 24px auto 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .pillar-card {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+                padding: 28px 20px !important;
+                border-radius: 20px !important;
+                box-sizing: border-box !important;
+            }
+
+            .pillar-icon {
+                margin: 0 auto 16px auto !important;
+            }
+
+            .pillar-card h3 {
+                text-align: center !important;
+                font-size: 18px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .pillar-card p {
+                text-align: center !important;
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+            }
+
+            /* 6. Process Steps */
+            .process-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                margin: 24px auto 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .process-card {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+                padding: 32px 20px 24px 20px !important;
+                border-radius: 20px !important;
+                box-sizing: border-box !important;
+            }
+
+            .step-num {
+                position: absolute !important;
+                top: 14px !important;
+                right: 16px !important;
+            }
+
+            .process-icon {
+                margin: 0 auto 16px auto !important;
+            }
+
+            .process-card h4 {
+                text-align: center !important;
+                font-size: 18px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .process-card p {
+                text-align: center !important;
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+            }
+
+            /* 7. Express Couriers & Fleet */
+            .fleet-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+                width: 100% !important;
+                max-width: 360px !important;
+                margin: 24px auto 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .courier-card {
+                border-radius: 20px !important;
+                box-sizing: border-box !important;
+                overflow: hidden !important;
+            }
+
+            .courier-img-wrap {
+                height: 240px !important;
+            }
+
+            .courier-info {
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                padding: 20px 16px !important;
+            }
+
+            .courier-name {
+                text-align: center !important;
+                font-size: 18px !important;
+            }
+
+            .courier-role {
+                text-align: center !important;
+                font-size: 13px !important;
+            }
+
+            .courier-stat-pill {
+                justify-content: center !important;
+            }
+
+            .courier-socials {
+                justify-content: center !important;
+                width: 100% !important;
+            }
+
+            /* 8. Safety & Hygiene */
+            .safety-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                margin: 24px auto 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .safety-card {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+                padding: 28px 20px !important;
+                border-radius: 20px !important;
+                box-sizing: border-box !important;
+            }
+
+            .safety-icon-header {
+                margin: 0 auto 16px auto !important;
+            }
+
+            .safety-card h4 {
+                text-align: center !important;
+                font-size: 18px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .safety-card p {
+                text-align: center !important;
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+            }
+
+            /* 9. Testimonials */
+            .testimonials-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 18px !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                margin: 24px auto 0 auto !important;
+                box-sizing: border-box !important;
+            }
+
+            .review-card {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+                padding: 26px 18px !important;
+                border-radius: 20px !important;
+                box-sizing: border-box !important;
+            }
+
+            .review-stars {
+                justify-content: center !important;
+                margin-bottom: 14px !important;
+            }
+
+            .review-text {
+                text-align: center !important;
+                font-size: 14px !important;
+                line-height: 1.65 !important;
+                margin-bottom: 18px !important;
+            }
+
+            .review-author-wrap {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 100% !important;
+                gap: 12px !important;
+            }
+
+            .review-author-wrap div {
+                text-align: left !important;
+            }
+
+            /* 10. Call to Action Banner */
+            .cta-section {
+                padding: 60px 16px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .cta-box {
+                padding: 36px 18px !important;
+                border-radius: 24px !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .cta-box .section-heading-white {
+                font-size: clamp(1.65rem, 5.8vw, 2.2rem) !important;
+                line-height: 1.25 !important;
+                margin-bottom: 16px !important;
+                text-align: center !important;
+            }
+
+            .cta-box .section-desc-light {
+                font-size: 14.5px !important;
+                line-height: 1.6 !important;
+                margin-bottom: 24px !important;
+                text-align: center !important;
+            }
+
+            .cta-btn-group {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+                align-items: center !important;
+                gap: 12px !important;
+                margin-top: 16px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-hero {
+                padding-top: 110px !important;
+                padding-bottom: 50px !important;
+            }
+
+            .hero-title {
+                font-size: 1.85rem !important;
+            }
+
+            .section-heading-white {
+                font-size: 1.6rem !important;
+            }
+
+            .timeline-strip {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 8px !important;
+            }
+
+            .timeline-item {
+                padding: 12px 6px !important;
+            }
+
+            .timeline-item h5 {
+                font-size: 17px !important;
+            }
+
+            .timeline-item p {
+                font-size: 10.5px !important;
+            }
+
+            .story-badge-stamp {
+                padding: 10px 16px !important;
+                font-size: 12px !important;
+                gap: 6px !important;
+            }
+
+            .story-badge-stamp span {
+                font-size: 17px !important;
+            }
+
+            .btn-primary-about,
+            .btn-secondary-about {
+                max-width: 100% !important;
+                padding: 13px 18px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- --- GLOBAL HEADER (IDENTICAL TO INDEX.HTML) --- -->
+    <div data-animation="over-left" class="navigation-menu w-nav" data-easing2="ease" data-easing="ease-in"
+        data-collapse="medium" role="banner" data-no-scroll="1" data-duration="300" data-doc-height="1">
+        <div class="nav-bg-cover-2"></div>
+        <div class="full-nav-hero-container w-container">
+            <div class="menu-item-wrapper">
+                <!-- Logo pinned to far left -->
+                <a href="index.html" class="desktop-only-logo"
+                    style="display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;padding-left:4px;">
+                    <img src="./img/logo.webp" alt="Stackly Logo"
+                        style="height:44px;width:auto;object-fit:contain;display:block;" />
+                </a>
+                <nav role="navigation" class="nav-menu-wrap-2 w-nav-menu">
+                    <div class="nav-menu-shadow-overlay-6">
+                        <div class="tablet-menu-6">
+                            <a href="index.html" class="logo-link-mobile w-nav-brand"
+                                style="display:flex;align-items:center;text-decoration:none;">
+                                <img src="./img/logo.webp" alt="Stackly Logo"
+                                    style="height:36px;width:auto;object-fit:contain;display:block;" />
+                            </a>
+                            <div class="close-menu-button-5" role="button" tabindex="0" aria-label="Close Navigation Menu">
+                                <img width="40" height="40" alt="Close Menu"
+                                    src="./image/66fe67ef210cf3ffe22a4c4d_Icon_3.webp" class="nav-close-icon-6" />
+                            </div>
+                        </div>
+                        <div class="dropdown-menu-5">
+                            <div class="top-tablet-menu-3">
+                                <div class="border-wrap-4">
+                                    <a href="index.html" class="header-link-item-2 w-inline-block">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">Home</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">Home</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="about.html" aria-current="page" class="header-link-item-2 w-inline-block w--current">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">About</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">About</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="service.html" class="header-link-item-2 w-inline-block">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">Service</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">Service</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="blog.html" class="header-link-item-2 w-inline-block">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">Blog</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">Blog</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="contact.html" class="header-link-item-2 w-inline-block">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">Contact</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">Contact</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="login.html" class="header-link-item-2 w-inline-block">
+                                        <div class="nav-text-wrap-2">
+                                            <div class="hero-nav-con-2">
+                                                <div class="nav-clip">
+                                                    <p class="nav-intro-item-2">Login</p>
+                                                </div>
+                                                <div class="nav-clip bottom">
+                                                    <p class="nav-intro-item-color">Login</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="burger-nav-2">
+                    <div class="menu-button-6 w-nav-button">
+                        <div class="wrapper-item-home-3">
+                            <div class="nav-line-white-3"></div>
+                            <div class="line-white-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- 1. HERO SECTION WITH IMAGE BANNER (REFERENCING INDEX.HTML) --- -->
+    <header class="about-hero" id="top">
+        <div class="about-hero-bg-wrapper">
+            <div class="about-hero-bg-image" style="background-image: url('./image/66fe8c046579ed03ca36405f_Banner-6.webp');"></div>
+            <div class="about-hero-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="Background Texture" class="about-hero-world-print" />
+        </div>
+
+        <div class="about-container">
+            <div class="about-hero-grid">
+                <!-- Left: Headline & Narrative -->
+                <div class="hero-text-content" data-aos="fade-right">
+                    <div class="hero-breadcrumb">
+                        <a href="404.html">Home</a>
+                        <i class="fa-solid fa-angle-right" style="font-size: 11px;"></i>
+                        <span>About Our Story</span>
+                    </div>
+
+                    <div class="section-tag">
+                        <i class="fa-solid fa-fire-flame-curved"></i> Crafting Flavor, Delivering Joy
+                    </div>
+
+                    <h1 class="hero-title">
+                        Revolutionizing Food Delivery With <span>Passion &amp; Speed</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Born from a craving for restaurant-quality hot meals delivered without compromise. We bridge the gap between world-class kitchens and hungry foodies in 24 minutes or less.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="404.html" class="btn-primary-about">
+                            <span>Explore Our Story</span>
+                            <i class="fa-solid fa-arrow-down" style="font-size: 13px;"></i>
+                        </a>
+                        <a href="404.html" class="btn-secondary-about">
+                            <span>Order Food Online</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 13px;"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust highlights -->
+                    <div class="hero-trust-row" style="display:flex; gap:24px; margin-top:36px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.12); flex-wrap:wrap;">
+                        <a href="404.html" class="hero-trust-badge" style="display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-star" style="color:var(--primary); font-size:16px;"></i>
+                            <span style="font-size:13px; font-weight:700; color:#fff;">4.9 / 5 Foodie Rating</span>
+                        </a>
+                        <a href="404.html" class="hero-trust-badge" style="display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-stopwatch" style="color:var(--primary); font-size:16px;"></i>
+                            <span style="font-size:13px; font-weight:700; color:#fff;">24 Min Avg Delivery</span>
+                        </a>
+                        <a href="404.html" class="hero-trust-badge" style="display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-leaf" style="color:#2ecc71; font-size:16px;"></i>
+                            <span style="font-size:13px; font-weight:700; color:#fff;">100% Eco Packaging</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Food Delivery Hero Card -->
+                <div class="hero-visual-col" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-visual-wrap">
+                        <img src="./New folder/ambitious-studio-rick-barrett-1N_YsUPLnmA-unsplash.webp"
+                            alt="Stackly Express Food Delivery Courier" class="hero-main-photo" />
+
+                        <!-- Floating Stat Card 1 -->
+                        <a href="404.html" class="floating-stat-card card-top">
+                            <div class="floating-icon-wrap gold">
+                                <i class="fa-solid fa-motorcycle"></i>
+                            </div>
+                            <div>
+                                <p class="floating-title">Fast Dispatch</p>
+                                <p class="floating-sub">24 Mins avg delivery</p>
+                            </div>
+                        </a>
+
+                        <!-- Floating Stat Card 2 -->
+                        <a href="404.html" class="floating-stat-card card-bottom">
+                            <div class="floating-icon-wrap pink">
+                                <i class="fa-solid fa-temperature-arrow-up"></i>
+                            </div>
+                            <div>
+                                <p class="floating-title">Insulated Fleet</p>
+                                <p class="floating-sub">Piping Hot Guarantee</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- 2. OUR STORY & CULINARY MISSION (WITH KITCHEN PHOTO BACKGROUND) --- -->
+    <section id="story" class="about-section story-section">
+        <div class="section-bg-layer" style="background-image: url('./image/670011114f2e8eaa618f718c_Photo-5.webp');">
+            <div class="story-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="Map Texture" class="story-world-watermark" />
+        </div>
+
+        <div class="about-container">
+            <div class="story-grid">
+                <!-- Left: Food Prep Imagery -->
+                <div data-aos="fade-right" class="story-images">
+                    <img src="./New folder/pablo-merchan-montes-hyIE90CN6b0-unsplash.webp"
+                        alt="Fresh Gourmet Kitchen Culinary Preparation" class="story-main-img" />
+                    <a href="404.html" class="story-badge-stamp">
+                        <span>7+</span>
+                        Years of Culinary Excellence
+                    </a>
+                </div>
+
+                <!-- Right: Mission Narrative -->
+                <div data-aos="fade-left" class="story-content">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-book-open"></i> Our Culinary Mission
+                    </div>
+                    <h2 class="section-heading-white">From A Small Local Kitchen To The City's Most Loved Food Fleet</h2>
+                    <p>
+                        In 2018, Stackly was founded on a simple realization: takeout shouldn't mean soggy crusts, lukewarm curries, or hour-long waits. Food is an experience, best enjoyed sizzling from the grill or chilled fresh from the sushi bar.
+                    </p>
+                    <p>
+                        We built a revolutionary logistics network that links top-rated artisan kitchens, master bakers, and neighborhood gems directly with hyper-local delivery couriers equipped with custom thermal-sealed packs.
+                    </p>
+                    <p>
+                        Today, we proudly deliver over a million smiles a year - from woodfired pizzas and smash burgers to fresh poke bowls and organic baked pastries.
+                    </p>
+
+                    <!-- Milestones -->
+                    <div class="timeline-strip">
+                        <a href="404.html" class="timeline-item">
+                            <h5>2018</h5>
+                            <p>Founded in Salem</p>
+                        </a>
+                        <a href="404.html" class="timeline-item">
+                            <h5>2020</h5>
+                            <p>100+ Partner Chefs</p>
+                        </a>
+                        <a href="404.html" class="timeline-item">
+                            <h5>2022</h5>
+                            <p>Electric Bike Fleet</p>
+                        </a>
+                        <a href="404.html" class="timeline-item">
+                            <h5>2024</h5>
+                            <p>1M+ Orders Served</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 3. FOUR CORE PILLARS (WITH TEXTURE BACKGROUND) --- -->
+    <section id="pillars" class="about-section pillars-section">
+        <div class="section-pattern-bg" style="background-image: url('./image/background-image.webp');">
+            <div class="pillars-overlay"></div>
+        </div>
+
+        <div class="about-container" style="text-align: center;">
+            <div class="section-tag" data-aos="fade-up">
+                <i class="fa-solid fa-gem"></i> Why Foodies Choose Us
+            </div>
+            <h2 class="section-heading-white" data-aos="fade-up" data-aos-delay="100">The Four Pillars Of Stackly Food Service</h2>
+            <p class="section-desc-light" data-aos="fade-up" data-aos-delay="200">
+                Every dish we dispatch is guided by our four non-negotiable standards of culinary excellence and swift delivery.
+            </p>
+
+            <div class="pillars-grid">
+                <!-- Pillar 1 -->
+                <a href="404.html" class="pillar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast Dispatch</h3>
+                    <p>Our smart routing algorithm assigns the closest active courier before the chef even finishes plating your dish.</p>
+                </a>
+
+                <!-- Pillar 2 -->
+                <a href="404.html" class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3>Thermal Sealed Bags</h3>
+                    <p>Proprietary insulated heat-lock bags keep hot foods above 65C and cold treats perfectly chilled until your doorstep.</p>
+                </a>
+
+                <!-- Pillar 3 -->
+                <a href="404.html" class="pillar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3>Top Rated Chefs Only</h3>
+                    <p>We hand-select kitchens with strict 4.5+ star ratings, hygienic kitchens, and authentic gourmet recipes.</p>
+                </a>
+
+                <!-- Pillar 4 -->
+                <a href="404.html" class="pillar-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Zero-Spill &amp; Tamper Proof</h3>
+                    <p>Every order is safely locked with our eco tamper-evident seal so you know your food is 100% untouched and secure.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 4. LIVE IMPACT STATS COUNTER WITH LARGE PHOTO BANNER BACKGROUND --- -->
+    <section id="impact" class="about-section stats-section">
+        <div class="section-bg-layer" style="background-image: url('./image/66fe8c046579ed03ca36405f_Banner-6.webp');">
+            <div class="stats-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="World Map Texture" class="stats-world-watermark" />
+        </div>
+
+        <div class="about-container">
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <a href="404.html" class="stat-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Partner Kitchens</div>
+                </a>
+
+                <!-- Stat 2 -->
+                <a href="404.html" class="stat-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Mins Average Delivery</div>
+                </a>
+
+                <!-- Stat 3 -->
+                <a href="404.html" class="stat-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-number" data-target="1250000">0</div>
+                    <div class="stat-label">Happy Meals Served</div>
+                </a>
+
+                <!-- Stat 4 -->
+                <a href="404.html" class="stat-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-number" data-target="99.8">0</div>
+                    <div class="stat-label">On-Time &amp; Fresh Rate</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 5. HOW IT WORKS TIMELINE (WITH SUBTLE TEXTURE) --- -->
+    <section id="how-it-works" class="about-section process-section">
+        <div class="section-pattern-bg" style="background-image: url('./image/background-image.webp');">
+            <div class="process-overlay"></div>
+        </div>
+
+        <div class="about-container" style="text-align: center;">
+            <div class="section-tag" data-aos="fade-up">
+                <i class="fa-solid fa-route"></i> The Journey Of Your Meal
+            </div>
+            <h2 class="section-heading-white" data-aos="fade-up" data-aos-delay="100">From Kitchen Flame To Your Dining Table</h2>
+            <p class="section-desc-light" data-aos="fade-up" data-aos-delay="200">
+                A seamless 4-step experience engineered for culinary freshness and speed.
+            </p>
+
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <a href="404.html" class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="step-num">STEP 01</span>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4>1. Choose Your Craving</h4>
+                    <p>Browse through hundreds of curated menus, filter by diet, cuisine, or fastest preparation time.</p>
+                </a>
+
+                <!-- Step 2 -->
+                <a href="404.html" class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="step-num">STEP 02</span>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h4>2. Cooked Fresh To Order</h4>
+                    <p>Our partner chefs prepare your dish with organic, premium ingredients the moment you tap order.</p>
+                </a>
+
+                <!-- Step 3 -->
+                <a href="404.html" class="process-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="step-num">STEP 03</span>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <h4>3. Smart Express Transit</h4>
+                    <p>Insulated thermal carriers and route optimization ensure minimum road time and zero temperature loss.</p>
+                </a>
+
+                <!-- Step 4 -->
+                <a href="404.html" class="process-card" data-aos="fade-up" data-aos-delay="400">
+                    <span class="step-num">STEP 04</span>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h4>4. Piping Hot Unboxing</h4>
+                    <p>Delivered straight to your hands with unbroken safety seals, ready to indulge and enjoy instantly.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 6. MEET OUR EXPRESS COURIERS & FLEET (WITH PHOTO BACKGROUND & MAP) --- -->
+    <section id="our-fleet" class="about-section fleet-section">
+        <div class="section-bg-layer" style="background-image: url('./image/6708c22596414aeb63abc7a5_Photo-3.webp');">
+            <div class="fleet-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="Map Texture" class="fleet-world-watermark" />
+        </div>
+
+        <div class="about-container" style="text-align: center;">
+            <div class="section-tag" data-aos="fade-up">
+                <i class="fa-solid fa-users"></i> The People Behind The Speed
+            </div>
+            <h2 class="section-heading-white" data-aos="fade-up" data-aos-delay="100">Meet Our Express Fleet &amp; Culinary Curators</h2>
+            <p class="section-desc-light" data-aos="fade-up" data-aos-delay="200">
+                Behind every 24-minute delivery is a passionate team of riders, master chefs, and routing specialists.
+            </p>
+
+            <div class="fleet-grid">
+                <!-- Member 1 -->
+                <div class="courier-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="courier-img-wrap">
+                        <img src="./New folder/fotos-xeWXn6ZaDr0-unsplash.webp" alt="Alex Rivera - Chief Fleet Captain" />
+                        <span class="courier-tag">Lead Courier</span>
+                    </div>
+                    <div class="courier-info">
+                        <h4 class="courier-name">Alex Rivera</h4>
+                        <div class="courier-role">Chief Fleet Captain</div>
+                        <div class="courier-stat-pill">
+                            <i class="fa-solid fa-medal" style="color:var(--primary);"></i>
+                            <span>12,000+ Flawless Drops</span>
+                        </div>
+                        <div class="courier-socials">
+                            <a href="404.html" class="courier-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="courier-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="courier-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="courier-img-wrap">
+                        <img src="./New folder/grab-_-fVSoMNC50-unsplash.webp" alt="David Chen - Culinary Quality Director" />
+                        <span class="courier-tag">Master Chef</span>
+                    </div>
+                    <div class="courier-info">
+                        <h4 class="courier-name">David Chen</h4>
+                        <div class="courier-role">Culinary Quality Director</div>
+                        <div class="courier-stat-pill">
+                            <i class="fa-solid fa-award" style="color:var(--primary);"></i>
+                            <span>Michelin Trained</span>
+                        </div>
+                        <div class="courier-socials">
+                            <a href="404.html" class="courier-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="courier-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="courier-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="courier-img-wrap">
+                        <img src="./New folder/robert-anasch-s04x1QTNnCA-unsplash.webp" alt="Marcus Vance - Smart Routing Lead" />
+                        <span class="courier-tag">Logistics</span>
+                    </div>
+                    <div class="courier-info">
+                        <h4 class="courier-name">Marcus Vance</h4>
+                        <div class="courier-role">Smart Routing Engineer</div>
+                        <div class="courier-stat-pill">
+                            <i class="fa-solid fa-code-fork" style="color:var(--primary);"></i>
+                            <span>AI Traffic Systems</span>
+                        </div>
+                        <div class="courier-socials">
+                            <a href="404.html" class="courier-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="courier-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="courier-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="courier-img-wrap">
+                        <img src="./New folder/fotos-Pzm7HjgB0A8-unsplash.webp" alt="Tariq Al-Mansoor - Senior Eco-Courier" />
+                        <span class="courier-tag">Eco-Fleet</span>
+                    </div>
+                    <div class="courier-info">
+                        <h4 class="courier-name">Tariq Al-Mansoor</h4>
+                        <div class="courier-role">Senior Eco-Courier</div>
+                        <div class="courier-stat-pill">
+                            <i class="fa-solid fa-leaf" style="color:#2ecc71;"></i>
+                            <span>Zero Carbon Hero</span>
+                        </div>
+                        <div class="courier-socials">
+                            <a href="404.html" class="courier-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="404.html" class="courier-social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="courier-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 7. SAFETY, HYGIENE & SUSTAINABILITY (WITH ACCENT PHOTO BACKGROUND) --- -->
+    <section id="safety" class="about-section safety-section">
+        <div class="section-bg-layer" style="background-image: url('./image/6707ac4f1c28f88fc77a00cd_Img-2.webp');">
+            <div class="safety-overlay"></div>
+        </div>
+
+        <div class="about-container" style="text-align: center;">
+            <div class="section-tag" data-aos="fade-up">
+                <i class="fa-solid fa-shield-virus"></i> Your Health &amp; Trust
+            </div>
+            <h2 class="section-heading-white" data-aos="fade-up" data-aos-delay="100">Hygiene, Safety &amp; Planet-First Delivery</h2>
+            <p class="section-desc-light" data-aos="fade-up" data-aos-delay="200">
+                We believe exceptional food must also care for your health and the environment.
+            </p>
+
+            <div class="safety-grid">
+                <!-- Card 1 -->
+                <a href="404.html" class="safety-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="safety-icon-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4>100% Tamper Evident Seals</h4>
+                    <p>Every single takeaway bag is sealed in the kitchen with a tamper-resistant security sticker that only you break open.</p>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="404.html" class="safety-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="safety-icon-header">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4>Biodegradable Packaging</h4>
+                    <p>All containers and cutlery are crafted from sugarcane bagasse and recycled craft paper, reducing single-use plastic by 95%.</p>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="404.html" class="safety-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="safety-icon-header">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h4>Contactless Safe Hand-off</h4>
+                    <p>Opt for fully contactless doorstep delivery with instant photo confirmation sent directly to your phone.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 8. CUSTOMER TESTIMONIALS (WITH MAP WATERMARK & TEXTURE) --- -->
+    <section id="testimonials" class="about-section testimonials-section">
+        <div class="section-pattern-bg" style="background-image: url('./image/background-image.webp');">
+            <div class="testimonials-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="Map Texture" class="testimonials-world-watermark" />
+        </div>
+
+        <div class="about-container" style="text-align: center;">
+            <div class="section-tag" data-aos="fade-up">
+                <i class="fa-solid fa-heart"></i> Foodie Love
+            </div>
+            <h2 class="section-heading-white" data-aos="fade-up" data-aos-delay="100">What Our Loyal Foodies Are Saying</h2>
+            <p class="section-desc-light" data-aos="fade-up" data-aos-delay="200">
+                Thousands of 5-star reviews from hungry families, remote workers, and late-night snackers.
+            </p>
+
+            <div class="testimonials-grid">
+                <!-- Review 1 -->
+                <a href="404.html" class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The food arrived steaming hot in just 21 minutes. The pizza crust was crispy, not soggy like typical apps. Stackly is officially our go-to for family dinners!"
+                        </p>
+                    </div>
+                    <div class="review-author-wrap">
+                        <img src="./New folder/fotos-xeWXn6ZaDr0-unsplash.webp" alt="Sarah Jenkins" class="author-avatar" />
+                        <div style="text-align:left;">
+                            <div class="author-name">Sarah Jenkins</div>
+                            <div class="author-role">Food Blogger &amp; Critic</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Review 2 -->
+                <a href="404.html" class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Their eco-friendly packaging and tamper seals give me complete peace of mind. Plus, the live GPS tracking of the driver is so precise down to the minute."
+                        </p>
+                    </div>
+                    <div class="review-author-wrap">
+                        <img src="./New folder/fotos-Pzm7HjgB0A8-unsplash.webp" alt="Mark Thompson" class="author-avatar" />
+                        <div style="text-align:left;">
+                            <div class="author-name">Mark Thompson</div>
+                            <div class="author-role">FinTech Product Lead</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Review 3 -->
+                <a href="404.html" class="review-card" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The variety of local chefs on Stackly is unmatched. I can get authentic hand-pulled noodles and artisan gelato in a single checkout. Outstanding customer care!"
+                        </p>
+                    </div>
+                    <div class="review-author-wrap">
+                        <img src="./New folder/grab-_-fVSoMNC50-unsplash.webp" alt="Priya Patel" class="author-avatar" />
+                        <div style="text-align:left;">
+                            <div class="author-name">Priya Patel</div>
+                            <div class="author-role">Creative Designer</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 9. CALL TO ACTION BANNER (WITH SIGNATURE BANNER PHOTO BACKGROUND) --- -->
+    <section id="order-now" class="about-section cta-section">
+        <div class="section-bg-layer" style="background-image: url('./image/66fe8c046579ed03ca36405f_Banner-6.webp');">
+            <div class="cta-overlay"></div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" alt="World Map Texture" class="cta-world-watermark" />
+        </div>
+
+        <div class="about-container">
+            <div class="cta-box" data-aos="zoom-in">
+                <div class="section-tag" style="background: rgba(249, 168, 11, 0.2); border-color: rgba(249, 168, 11, 0.5);">
+                    <i class="fa-solid fa-motorcycle"></i> Hot &amp; Fresh In 24 Mins
+                </div>
+                <h2 class="section-heading-white" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 20px;">
+                    Ready For A Delicious Meal Delivered In Minutes?
+                </h2>
+                <p class="section-desc-light" style="margin-bottom: 30px; font-size: 17px; color: #e1ede6;">
+                    Join over 1.2 million happy food lovers enjoying piping hot dishes from the city's finest restaurants. Fast, fresh, and delivered right to your door.
+                </p>
+
+                <div class="cta-btn-group">
+                    <a href="404.html" class="btn-primary-about">
+                        <span>Browse Menu &amp; Order Now</span>
+                        <i class="fa-solid fa-arrow-right" style="font-size: 13px;"></i>
+                    </a>
+                    <a href="404.html" class="btn-secondary-about">
+                        <i class="fa-solid fa-phone" style="font-size: 13px;"></i>
+                        <span>24/7 Customer Care</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- GLOBAL FOOTER (IDENTICAL TO INDEX.HTML) --- -->
+    <section id="contact" class="section-footer">
+        <div class="footer-bg">
+            <div class="base-container">
+                <!-- Stackly Brand Logo in Footer (Left-aligned, Links to index.html) -->
+                <div class="footer-brand-wrap">
+                    <a href="index.html" class="footer-logo-link" title="Stackly - Home" aria-label="Stackly Food Delivery">
+                        <img src="./img/logo.webp" alt="Stackly Logo" class="footer-logo-img" />
+                    </a>
+                </div>
+                <div class="footer-top-link-wrap">
+                    <div class="footer-con">
+                        <div class="footer-info-2">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <h4 class="text-footer-white" style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: 0.5px;">Quick Links</h4>
+                            </div>
+                            <div class="links-socials">
+                                <div data-w-id="baeafd90-2cf5-d964-459b-33891719ffee" class="links-container">
+                                    <a href="index.html" class="footer-useful-link">Home</a>
+                                    <a href="about.html" class="footer-useful-link w--current">About</a>
+                                    <a href="service.html" class="footer-useful-link">Service</a>
+                                    <a href="blog.html" class="footer-useful-link">Blog</a>
+                                    <a href="contact.html" class="footer-useful-link">Contact</a>
+                                    <a href="login.html" class="footer-useful-link">Login</a>
+                                </div>
+                                <div data-w-id="baeafd90-2cf5-d964-459b-33891719fff7" class="social-networks">
+                                    <a href="404.html" class="footer-socials" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="404.html" class="footer-socials" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="404.html" class="footer-socials" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="404.html" class="footer-socials" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-grid">
+                        <div class="footer-form">
+                            <div class="top-footer-info">
+                                <h5 class="text-footer-white">Craving Exclusive Deals?</h5>
+                                <p class="footer-white-paradraph par-1">Join our foodie club today for secret discounts, free delivery vouchers, and new restaurant updates!</p>
+                            </div>
+                            <div class="social-networks">
+                                <a href="404.html" class="home-4-video-wrapper contact-us-page" style="text-decoration:none; display:block;">
+                                    <div class="feedback-hero-wrap">
+                                        <div class="feedback-white-wrap">
+                                            <div class="feedback-photo-2"></div>
+                                        </div>
+                                        <div class="feedback-white-wrap big-one">
+                                            <div class="feedback-photo-2 photo-3"></div>
+                                        </div>
+                                        <div class="feedback-white-wrap">
+                                            <div class="feedback-photo-2 photo-2"></div>
+                                        </div>
+                                        <div class="feedback-white-wrap last-item">
+                                            <div class="feedback-photo-2 photo-5"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div data-w-id="baeafd90-2cf5-d964-459b-3389171a0012" class="footer-form borders">
+                            <div class="footer-l-1"></div>
+                            <div class="top-footer-info">
+                                <h5 class="text-footer-white">Fast Support 24/7</h5>
+                                <a href="404.html" class="address-footer w-inline-block">
+                                    <p class="address-footer-text">Stackly Food Delivery HQ, MMR COMPLEX, Salem tamilnadu</p>
+                                </a>
+                            </div>
+                            <div class="stay-connect">
+                                <a href="404.html" class="footer-project-link">+91987654321</a>
+                                <a href="404.html" class="footer-project-link">8080808080</a>
+                            </div>
+                            <div class="footer-l-2"></div>
+                            <div class="footer-l-3"></div>
+                            <div class="footer-l-4"></div>
+                        </div>
+                        <div id="w-node-baeafd90-2cf5-d964-459b-3389171a0021-1719ffe7" class="footer-form">
+                            <div class="top-footer-info">
+                                <h5 class="text-footer-white">Download the Stackly App</h5>
+                                <p class="footer-white-paradraph">Order delicious meals in seconds, customize your toppings, and track your courier with live GPS!</p>
+                            </div>
+                            <div class="app-wrap-2">
+                                <a data-w-id="baeafd90-2cf5-d964-459b-3389171a0027" href="404.html"
+                                    class="app-btn w-inline-block" style="text-decoration: none; padding: 12px 20px;">
+                                    <div style="display: flex; align-items: center; gap: 10px; color: #ffffff;">
+                                        <svg viewBox="0 0 384 512" width="22" height="22" fill="currentColor"
+                                            style="flex-shrink: 0; width: 22px; height: 22px;">
+                                            <path
+                                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-48.7-19.1-78.2-18.6-38.3.6-73.4 22.3-93 56.5-40.1 70.1-10.2 173.4 28.6 229.4 19 27.2 41.5 57.4 71 56.3 28.2-1.1 38.9-18.2 71-18.2 31.9 0 41.6 18.2 71.2 17.6 30.2-.5 50.1-27.4 69-54.6 21.9-31.7 30.9-62.4 31.2-64-1-1-35.6-13.6-36-54.3zM294.1 75.7c24.6-29.5 41-70.3 36.4-110.6-34.9 1.4-77.5 23.3-102.5 52.6-21.4 24.6-40.3 65.9-35.3 105.7 38.9 3 78.8-19.9 101.4-47.7z" />
+                                        </svg>
+                                        <div
+                                            style="display: flex; flex-direction: column; text-align: left; line-height: 1.2;">
+                                            <span
+                                                style="font-size: 8px; font-weight: 500; opacity: 0.8; letter-spacing: 0.5px; text-transform: uppercase;">Download
+                                                on the</span>
+                                            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.2px;">App
+                                                Store</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="404.html" class="app-btn w-inline-block"
+                                    style="text-decoration: none; padding: 12px 20px;">
+                                    <div style="display: flex; align-items: center; gap: 10px; color: #ffffff;">
+                                        <svg viewBox="0 0 512 512" width="22" height="22" fill="currentColor"
+                                            style="flex-shrink: 0; width: 22px; height: 22px;">
+                                            <path
+                                                d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58-33.4-60.7 60.7 60.8 60.8 57.9-33.4c15-8.7 24.8-23.7 24.8-42.3 0-18.7-9.8-33.7-24.8-42.4zM385.4 337.8L104.6 499l220.7-126.7 60.1-60.1z" />
+                                        </svg>
+                                        <div
+                                            style="display: flex; flex-direction: column; text-align: left; line-height: 1.2;">
+                                            <span
+                                                style="font-size: 8px; font-weight: 500; opacity: 0.8; letter-spacing: 0.5px; text-transform: uppercase;">GET
+                                                IT ON</span>
+                                            <span
+                                                style="font-size: 13px; font-weight: 600; letter-spacing: 0.2px;">Google
+                                                Play</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-w-id="baeafd90-2cf5-d964-459b-3389171a002b" class="top-footer-line"></div>
+                    <div data-w-id="baeafd90-2cf5-d964-459b-3389171a002c" class="bottom-line-2"></div>
+                </div>
+                <div data-w-id="baeafd90-2cf5-d964-459b-3389171a002d" class="footer-bottom">
+                    <div class="rights-wrap">
+                        <div class="footer-par-copyright">&copy; Stackly Food Delivery. All Rights Reserved.</div>
+                    </div>
+                    <div class="rights-wrap">
+                        <div class="rights-wrapper">
+                            <div class="footer-rights-text">
+                                Created by <a href="404.html" class="footer-right-link">VishnuStackly</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp" loading="lazy"
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 909.875px, (max-width: 1279px) 1061.53125px, (max-width: 1919px) 1289px, 1364.8125px"
+                srcset="./image/6703d29eef44ddcd9ec29c76_World-p-800.webp 500w, ./image/6703d29eef44ddcd9ec29c76_World-p-800.webp 800w, ./image/6703d29eef44ddcd9ec29c76_World-p-800.webp 1703w"
+                alt="Project photo" class="footer-print" />
+        </div>
+    </section>
+
+    <!-- --- CORE SCRIPTS --- -->
+    <script src="./assets/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"></script>
+    <script src="./assets/main.js" type="text/javascript"></script>
+
+    <!-- --- AOS SCRIPT --- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- --- INTERSECTION OBSERVER STATS COUNTER & ENHANCEMENTS --- -->
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // Intersection Observer for counting numbers up
+        document.addEventListener('DOMContentLoaded', function () {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            if (!('IntersectionObserver' in window)) {
+                // Fallback if IntersectionObserver not supported
+                statNumbers.forEach(function (stat) {
+                    const target = parseFloat(stat.getAttribute('data-target'));
+                    stat.innerText = target >= 1000 ? target.toLocaleString() + '+' : target + (target === 99.8 ? '%' : (target === 24 ? ' Mins' : '+'));
+                });
+                return;
+            }
+
+            const observer = new IntersectionObserver(function (entries, obs) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        const stat = entry.target;
+                        const target = parseFloat(stat.getAttribute('data-target'));
+                        const isDecimal = target % 1 !== 0;
+                        const duration = 2000;
+                        const startTime = performance.now();
+
+                        function updateCounter(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            // Ease out quartic
+                            const easeProgress = 1 - Math.pow(1 - progress, 4);
+                            const currentVal = progress === 1 ? target : (target * easeProgress);
+
+                            if (isDecimal) {
+                                stat.innerText = currentVal.toFixed(1) + '%';
+                            } else if (target >= 1000) {
+                                stat.innerText = Math.floor(currentVal).toLocaleString() + '+';
+                            } else if (target === 24) {
+                                stat.innerText = Math.floor(currentVal) + ' Mins';
+                            } else {
+                                stat.innerText = Math.floor(currentVal) + '+';
+                            }
+
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCounter);
+                            }
+                        }
+
+                        requestAnimationFrame(updateCounter);
+                        obs.unobserve(stat);
+                    }
+                });
+            }, { threshold: 0.35 });
+
+            statNumbers.forEach(function (el) {
+                observer.observe(el);
+            });
+
+            // Mobile menu toggle & backdrop handler (Ghost-click safe, Webflow sync)
+            var menuBtn = document.querySelector('.menu-button-6');
+            var closeBtn = document.querySelector('.close-menu-button-5');
+            var navMenu = document.querySelector('.nav-menu-wrap-2');
+            var burgerNav = document.querySelector('.burger-nav-2');
+            var backdrop = document.querySelector('.mobile-menu-backdrop');
+            if (!backdrop) {
+                backdrop = document.createElement('div');
+                backdrop.className = 'mobile-menu-backdrop';
+                document.body.appendChild(backdrop);
+            }
+
+            var isMenuActionLocked = false;
+
+            function syncWebflowNavState(isOpen) {
+                if (window.jQuery) {
+                    try {
+                        window.jQuery('.w-nav').each(function () {
+                            var d = window.jQuery.data(this, '.w-nav');
+                            if (d) {
+                                d.open = !!isOpen;
+                            }
+                        });
+                    } catch (err) {}
+                }
+            }
+
+            function openMobileMenu() {
+                if (isMenuActionLocked) return;
+                isMenuActionLocked = true;
+                if (navMenu) navMenu.classList.add('w--open');
+                if (menuBtn) menuBtn.classList.add('w--open');
+                document.body.classList.add('mobile-menu-open');
+                if (backdrop) backdrop.classList.add('active');
+                syncWebflowNavState(true);
+                setTimeout(function () {
+                    isMenuActionLocked = false;
+                }, 350);
+            }
+
+            function closeMobileMenu() {
+                if (isMenuActionLocked) return;
+                isMenuActionLocked = true;
+                if (navMenu) navMenu.classList.remove('w--open');
+                if (menuBtn) menuBtn.classList.remove('w--open');
+                document.body.classList.remove('mobile-menu-open');
+                if (backdrop) backdrop.classList.remove('active');
+                syncWebflowNavState(false);
+
+                // Prevent ghost-clicks from falling through to the hamburger button
+                if (menuBtn) menuBtn.style.pointerEvents = 'none';
+                if (burgerNav) burgerNav.style.pointerEvents = 'none';
+
+                setTimeout(function () {
+                    if (menuBtn) menuBtn.style.pointerEvents = '';
+                    if (burgerNav) burgerNav.style.pointerEvents = '';
+                    isMenuActionLocked = false;
+                }, 400);
+            }
+
+            if (menuBtn && navMenu) {
+                menuBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (isMenuActionLocked) return;
+                    if (navMenu.classList.contains('w--open') || document.body.classList.contains('mobile-menu-open')) {
+                        closeMobileMenu();
+                    } else {
+                        openMobileMenu();
+                    }
+                });
+            }
+
+            if (closeBtn) {
+                function handleCloseTrigger(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+                    closeMobileMenu();
+                }
+                closeBtn.addEventListener('click', handleCloseTrigger, true);
+                closeBtn.addEventListener('touchend', handleCloseTrigger, { passive: false, capture: true });
+                closeBtn.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ' || e.keyCode === 13 || e.keyCode === 32) {
+                        e.preventDefault();
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            if (backdrop) {
+                backdrop.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
+
+            document.addEventListener('keydown', function (e) {
+                if ((e.key === 'Escape' || e.keyCode === 27) && document.body.classList.contains('mobile-menu-open')) {
+                    closeMobileMenu();
+                }
+            });
+
+            var navLinks = document.querySelectorAll('.header-link-item-2');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    closeMobileMenu();
+                });
+            });
+
+            // Header solid background on scroll
+            window.addEventListener('scroll', function () {
+                var nav = document.querySelector('.navigation-menu');
+                if (nav) {
+                    if (window.scrollY > 15) {
+                        nav.classList.add('is-scrolled');
+                    } else {
+                        nav.classList.remove('is-scrolled');
+                    }
+                }
+            }, { passive: true });
+        });
+
+        // --- 404 NAVIGATION TRACKER & EXACT PARTICULAR POSITION RESTORER ---
+        (function init404Tracker() {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+
+            // Capture exact scroll & element position on clicking any 404 link
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest('a[href*="404.html"]');
+                if (!link) return;
+
+                var scrollY = Math.round(window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0);
+                var scrollX = Math.round(window.scrollX || window.pageXOffset || document.documentElement.scrollLeft || 0);
+                var rect = link.getBoundingClientRect();
+                var elemViewportTop = Math.round(rect.top);
+                var elemAbsTop = Math.round(scrollY + rect.top);
+
+                // Find nearest semantic section or container with an ID
+                var sectionEl = link.closest('section[id], [id]:not([id^="w-node"]):not([id^="w-slider"]):not([id^="w-tab"])');
+                var sectionId = (sectionEl && sectionEl.id) ? sectionEl.id : '';
+
+                if (!sectionId) {
+                    var candidateSections = document.querySelectorAll('section[id], div[id]:not([id^="w-node"]):not([id^="w-slider"]):not([id^="w-tab"])');
+                    for (var i = 0; i < candidateSections.length; i++) {
+                        var cRect = candidateSections[i].getBoundingClientRect();
+                        if (cRect.top <= window.innerHeight * 0.5 && cRect.bottom >= 0) {
+                            sectionId = candidateSections[i].id;
+                            break;
+                        }
+                    }
+                }
+
+                var all404 = Array.prototype.slice.call(document.querySelectorAll('a[href*="404.html"]'));
+                var linkIndex = all404.indexOf(link);
+                var pageName = window.location.pathname.split('/').pop() || 'about.html';
+
+                try {
+                    sessionStorage.setItem('stackly_404_source_page', pageName);
+                    sessionStorage.setItem('stackly_404_source_section', sectionId || '');
+                    sessionStorage.setItem('stackly_404_source_scroll', scrollY.toString());
+                    sessionStorage.setItem('stackly_404_source_scroll_x', scrollX.toString());
+                    sessionStorage.setItem('stackly_404_source_elem_vtop', elemViewportTop.toString());
+                    sessionStorage.setItem('stackly_404_source_elem_top', elemAbsTop.toString());
+                    sessionStorage.setItem('stackly_404_source_link_index', linkIndex.toString());
+                } catch (err) {}
+
+                var targetUrl = '404.html?from=' + encodeURIComponent(pageName) +
+                                '&scroll=' + scrollY +
+                                '&vtop=' + elemViewportTop +
+                                '&lidx=' + linkIndex;
+                if (sectionId) {
+                    targetUrl += '&section=' + encodeURIComponent(sectionId);
+                }
+                link.setAttribute('href', targetUrl);
+            }, true);
+
+            // Exact position restoration handler
+            var urlParams = new URLSearchParams(window.location.search);
+            var restoreScrollStr = urlParams.get('restore_pos') || sessionStorage.getItem('stackly_restore_scroll') || sessionStorage.getItem('stackly_404_source_scroll');
+            var restoreVTopStr = urlParams.get('vtop') || sessionStorage.getItem('stackly_restore_vtop') || sessionStorage.getItem('stackly_404_source_elem_vtop');
+            var restoreLidxStr = urlParams.get('lidx') || sessionStorage.getItem('stackly_restore_lidx') || sessionStorage.getItem('stackly_404_source_link_index');
+            var restoreSection = urlParams.get('sec') || sessionStorage.getItem('stackly_restore_section') || sessionStorage.getItem('stackly_404_source_section');
+
+            var isRestoring = (restoreScrollStr !== null) || (sessionStorage.getItem('stackly_restore_active') === '1');
+
+            if (!isRestoring) {
+                document.documentElement.classList.remove('stackly-restoring-pos');
+                return;
+            }
+
+            var targetScrollY = restoreScrollStr !== null ? parseInt(restoreScrollStr, 10) : 0;
+            var targetVTop = restoreVTopStr !== null ? parseInt(restoreVTopStr, 10) : null;
+            var targetLidx = restoreLidxStr !== null ? parseInt(restoreLidxStr, 10) : -1;
+
+            function calculateExactPosition() {
+                if (targetLidx >= 0 && targetVTop !== null) {
+                    var all404 = document.querySelectorAll('a[href*="404.html"]');
+                    if (targetLidx < all404.length) {
+                        var el = all404[targetLidx];
+                        var rect = el.getBoundingClientRect();
+                        var currentScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+                        var elDocTop = currentScroll + rect.top;
+                        var computedY = Math.round(elDocTop - targetVTop);
+                        if (computedY >= 0) return computedY;
+                    }
+                }
+                return Math.max(0, targetScrollY);
+            }
+
+            function applyExactScroll() {
+                var pos = calculateExactPosition();
+                window.scrollTo({
+                    top: pos,
+                    left: 0,
+                    behavior: 'instant'
+                });
+            }
+
+            // Apply immediately
+            applyExactScroll();
+
+            // Repeated checks across layout and lazy-loading intervals
+            var intervals = [15, 40, 80, 150, 300, 600, 900];
+            var timers = [];
+            intervals.forEach(function (ms) {
+                timers.push(setTimeout(applyExactScroll, ms));
+            });
+
+            function revealContent() {
+                applyExactScroll();
+                document.documentElement.classList.remove('stackly-restoring-pos');
+            }
+
+            if (document.readyState === 'complete' || document.readyState === 'interactive') {
+                revealContent();
+            } else {
+                document.addEventListener('DOMContentLoaded', revealContent);
+            }
+            window.addEventListener('load', revealContent);
+            window.addEventListener('pageshow', revealContent);
+
+            // Cancel intervals if user starts scrolling manually
+            function cancelRestore() {
+                timers.forEach(function (t) { clearTimeout(t); });
+                document.documentElement.classList.remove('stackly-restoring-pos');
+            }
+            window.addEventListener('wheel', cancelRestore, { once: true, passive: true });
+            window.addEventListener('touchstart', cancelRestore, { once: true, passive: true });
+            window.addEventListener('keydown', cancelRestore, { once: true, passive: true });
+
+            // Final cleanup after 1.2s
+            setTimeout(function () {
+                document.documentElement.classList.remove('stackly-restoring-pos');
+                try {
+                    sessionStorage.removeItem('stackly_restore_active');
+                    sessionStorage.removeItem('stackly_restore_scroll');
+                    sessionStorage.removeItem('stackly_restore_vtop');
+                    sessionStorage.removeItem('stackly_restore_lidx');
+                    sessionStorage.removeItem('stackly_restore_section');
+                    sessionStorage.removeItem('stackly_404_source_scroll');
+                    sessionStorage.removeItem('stackly_404_source_section');
+                    sessionStorage.removeItem('stackly_404_source_elem_vtop');
+                    sessionStorage.removeItem('stackly_404_source_elem_top');
+                    sessionStorage.removeItem('stackly_404_source_link_index');
+                } catch (e) {}
+            }, 1200);
+        })();
+    </script>
+</body>
+
+</html>
